@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import startupData from './Data/startupData'    
+import startupData from './Data/StartupData'    
 import './style.css'
 
 
