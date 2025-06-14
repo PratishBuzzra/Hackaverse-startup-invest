@@ -1,11 +1,17 @@
 import React from 'react'
+import { useState } from "react";
+import "./App.css";
+import Navbar from './samyak/components/navbar/navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      
+    <div className="App">
+    <BrowserRouter>     
+      <Navbar />
+    </BrowserRouter>
     </div>
-  )
+    );
 }
 
-export default App
+export default App;
