@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './samyak/components/navbar/navbar';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <BrowserRouter>     
       <Navbar />
         <Routes>
+      <Route path = "/" element={<Homepage />}/>
         </Routes>
     </BrowserRouter>
     </div>
