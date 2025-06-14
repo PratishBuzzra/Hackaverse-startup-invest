@@ -1,13 +1,14 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './samyak/components/navbar/navbar';
 
 function App() {
   return (
     <div className="App">
-    <Navbar /> 
-    <BrowserRouter>   
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-      </Routes>
+    <BrowserRouter>     
+      <Navbar />
+        <Routes>
+        </Routes>
     </BrowserRouter>
     </div>
     );
