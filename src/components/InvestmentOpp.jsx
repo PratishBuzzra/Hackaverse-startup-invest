@@ -2,6 +2,9 @@ import React from "react";
 import "../pages/CSS/home.css";
 import { FaRegStar } from "react-icons/fa";
 import "../pages/CSS/home.css";
+import { FaRobot } from "react-icons/fa6";
+import { RiHealthBookFill } from "react-icons/ri";
+import { FaDatabase } from "react-icons/fa6";
 const Opportunities = () => {
   const opportunities = [
     {
@@ -12,6 +15,7 @@ const Opportunities = () => {
       raised: 2.5,
       target: 5,
       investors: 45,
+      icon: <FaRobot />,
     },
     {
       id: 2,
@@ -21,6 +25,7 @@ const Opportunities = () => {
       raised: 1.8,
       target: 3,
       investors: 32,
+      icon: <RiHealthBookFill />,
     },
     {
       id: 3,
@@ -30,6 +35,7 @@ const Opportunities = () => {
       raised: 3.2,
       target: 7,
       investors: 67,
+      icon: <FaDatabase />,
     },
   ];
 
@@ -45,10 +51,12 @@ const Opportunities = () => {
           {opportunities.map((op) => (
             <div className="card" key={op.id}>
               <div className="card-header">
-                <span className="emoji">{op.emoji}</span>
-                <div>
-                  <h3 className="startup-name">{op.name}</h3>
-                  <span className="tag">{op.sector}</span>
+                <div className="left-header">
+                  <span className="icon">{op.icon}</span>
+                  <div className="name-tag">
+                    <h3 className="startup-name">{op.name}</h3>
+                    <span className="tag">{op.sector}</span>
+                  </div>
                 </div>
                 <span className="star">
                   <FaRegStar />

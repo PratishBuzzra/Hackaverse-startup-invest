@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <section id="feature" className="feature-section">
       <div className="feature-container">
-        <h3 className="feature-title">How AngelFlow Works</h3>
+        <h3 className="feature-title">How SajiloLagani Works</h3>
         <p className="feature-subtitle">
           Simple steps to start your investment journey
         </p>

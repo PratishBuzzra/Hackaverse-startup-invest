@@ -137,26 +137,32 @@
 
 .card-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.emoji {
-  font-size: 32px;
-  margin-right: 10px;
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.name-tag {
+  display: flex;
+  flex-direction: column;
 }
 
 .startup-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin: 0;
+  color: #111827;
 }
 
 .tag {
   background: #e5e7eb;
-  padding: 2px 8px;
+  padding: 2px 18px;
   border-radius: 9999px;
-  font-size: 12px;
   font-weight: 500;
 }
 
@@ -268,4 +274,42 @@
   font-size: 15px;
   line-height: 1.6;
 }
+
+.SI-section {
+  background-color: #2563eb; 
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.SI-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.SI-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #e0e7ff;
+}
+
+.SI-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.SI-button {
+  background: white;
+  color: #111827;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
